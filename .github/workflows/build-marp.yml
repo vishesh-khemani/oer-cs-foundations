@@ -8,24 +8,15 @@
       workflow_dispatch:
 
     jobs:
-      build:
+      publish:
         runs-on: ubuntu-latest
-        
+        container: marpteam/marp-cli:latest # Specify the Marp CLI Docker image
         steps:
-          - name: Checkout repository
-            uses: actions/checkout@v4
-
-          - name: Build Marp slides
-            uses: KoharaKazuya/marp-cli-action@v4
+          - uses: actions/checkout@v4
+          - name: Convert Marp slides
+            run: marp content/slides/**/*.md --pdf # Run the marp command within the container
+          - uses: actions/upload-artifact@v4
             with:
-              # Output type: Converts the files to PDF format.
-              args: content/slides/**/*.md --pdf --allow-local-files
+              name: marp-output
+              path: content/slides/**/*.md
 
-          - name: Upload PDF artifacts
-            uses: actions/upload-artifact@v4
-            with:
-              # Name for the artifact (the downloadable ZIP file)
-              name: marp-pdfs
-              # Path to the generated files. Marp CLI places output files 
-              # alongside their source files if no output directory is specified.
-              path: content/slides/**/*.pdf
