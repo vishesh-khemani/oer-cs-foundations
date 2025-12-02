@@ -16,7 +16,7 @@
             uses: actions/checkout@v4
 
           - name: Build Marp slides
-            uses: marp-team/marp-cli-action@v2
+            uses: KoharaKazuya/marp-cli-action@v4
             with:
               # Input path: Specifies the directory containing your Markdown files.
               # The action automatically processes all .md files in this directory.
