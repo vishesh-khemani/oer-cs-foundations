@@ -14,7 +14,7 @@
         steps:
           - uses: actions/checkout@v4
           - name: Convert Marp slides
-            run: marp content/slides/**/*.md --pdf # Run the marp command within the container
+            run: marpteam.marp-cli content/slides/**/*.md --pdf # Run the marp command within the container
           - uses: actions/upload-artifact@v4
             with:
               name: marp-output
