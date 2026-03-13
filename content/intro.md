@@ -1,6 +1,6 @@
 # Introduction
 
-(Associated slides: [introduction-slides.md](./slides/introduction-slides.md) )
+(Associated slides: [introduction-slides.pdf](./slides/introduction-slides.pdf) )
 
 - This course will explore two broad areas:
 
