@@ -1,0 +1,7 @@
+2025-10-12 08:23:15 192.168.1.10 INFO User logged in successfully
+2025-10-12 08:24:32 192.168.1.15 ERROR Database connection failed
+2025-10-12 08:25:01 192.168.1.10 WARNING High memory usage detected
+2025-10-12 08:26:45 192.168.1.20 ERROR Database connection failed
+2025-10-12 08:27:12 192.168.1.15 ERROR File not found: config.xml
+2025-10-12 08:28:33 192.168.1.10 INFO Request completed
+2025-10-12 08:29:01 192.168.1.25 ERROR Database connection failed

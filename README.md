@@ -12,6 +12,7 @@ This repository contains Open Education Resources (OER) for a college-level cour
   - [Theory of Computing](./content/theory/index.md)
   - [Practice of Computing](./content/practice/index.md)
 - [Quizzes](./content/quizzes/)
+- [Assignments](./content/assignments/)
 
 ## Credits
 

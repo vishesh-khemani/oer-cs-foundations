@@ -1,0 +1,24 @@
+Log Analysis Report
+Generated: Sat Oct 12 14:30:22 PDT 2025
+Source Log: /var/log/server.log
+===========================================
+
+Total Lines: 7
+
+Total ERROR messages: 4
+
+Total WARNING messages: 1
+
+Top 5 Most Frequent Error Messages:
+-----------------------------------
+      3 Database connection failed 
+      1 File not found: config.xml 
+
+Unique IP Addresses with Errors:
+--------------------------------
+192.168.1.15
+192.168.1.20
+192.168.1.25
+
+===========================================
+Analysis complete!

@@ -1,0 +1,79 @@
+<project name="TestAssignment" default="run-all-tests" basedir=".">
+    <!-- Project-specific properties -->
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="build"/>
+    <property name="lib.dir"   value="lib"/>
+
+    <!-- Initialize the build directory -->
+    <target name="init">
+        <echo>Creating build directories...</echo>
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <!-- Compile the Java source code -->
+    <target name="compile" depends="init">
+        <echo>Compiling source files...</echo>
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               includeantruntime="false">
+            <!-- Exclude files ending with Test.java -->
+            <exclude name="**/*Test.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-test" depends="compile">
+        <echo>Compiling test files...</echo>
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+
+            <!-- Include files ending with Test.java -->
+            <include name="**/*Test.java"/>
+        </javac>
+    </target>
+
+    <!-- Macro to run JUint tests for a pattern -->
+    <macrodef name="runtest">
+        <attribute name="pattern"/>
+        <sequential>
+            <junit printsummary="on" haltonfailure="true">
+                <classpath>
+                    <pathelement path="${build.dir}"/>
+                    <fileset dir="${lib.dir}">
+                        <include name="*.jar"/>
+                    </fileset>
+                </classpath>
+                <batchtest fork="yes">
+                    <fileset dir="${build.dir}">
+                        <include name="@{pattern}"/>
+                    </fileset>
+                </batchtest>
+                <formatter type="plain" usefile="false"/>
+            </junit>
+        </sequential>
+    </macrodef>
+
+    <target name="run-all-tests" depends="compile-test">
+        <runtest pattern="**/*Test.class"/>
+    </target>
+
+    <target name="run-language-decider-test" depends="compile-test">
+        <runtest pattern="**/LanguageDeciderTest.class"/>
+    </target>
+
+    <target name="run-perfect-square-decider-test" depends="compile-test">
+        <runtest pattern="**/PerfectSquareDeciderTest.class"/>
+    </target>
+
+    <!-- Clean the build directory -->
+    <target name="clean">
+        <echo>Cleaning up...</echo>
+        <delete dir="${build.dir}"/>
+    </target>
+</project>
