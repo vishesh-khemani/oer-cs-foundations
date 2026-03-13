@@ -9,7 +9,7 @@ This repository contains Open Education Resources (OER) for a college-level cour
 ## Content
 
 - [Introduction](./content/intro.md)
-- Theory of Computing
+- [Theory of Computing](./content/theory/index.md)
 - Practice of Computing
 
 ## Credits
@@ -20,6 +20,6 @@ This repository contains Open Education Resources (OER) for a college-level cour
   1. M. Sipser, *Introduction to the Theory of Computation*
   2. R. Sedgewick, *Computer Science: An Interdisciplinary Approach*
 
-- The content includes *original lecture notes* and other content derived from those lecture notes (e.g. slides, quizzes, assignments). The *derived content* was created with some help from **generative AI**.
+- The content includes *original lecture notes* and other content derived from those lecture notes (e.g. slides, quizzes, assignments). The *derived content* was created with some help from generative AI.
 
 ---
