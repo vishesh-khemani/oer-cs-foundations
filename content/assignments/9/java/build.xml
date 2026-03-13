@@ -1,0 +1,114 @@
+<project name="Complexity" default="clean" basedir=".">
+    <!-- Project-specific properties -->
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="build"/>
+    <property name="lib.dir"   value="lib"/>
+
+    <!-- Initialize the build directory -->
+    <target name="init" depends="clean">
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <target name="compile-subsetter" depends="init">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="Subsetter*.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-subset-sum" depends="compile-subsetter">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="SubsetSum*.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-permuter" depends="init">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="Permuter*.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-sorter" depends="compile-permuter">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="Sorter*.java"/>
+        </javac>
+    </target>
+
+    <!-- Macro to run JUint tests for a pattern -->
+    <macrodef name="runtest">
+        <attribute name="pattern"/>
+        <sequential>
+            <junit printsummary="on" haltonfailure="true">
+                <classpath>
+                    <pathelement path="${build.dir}"/>
+                    <fileset dir="${lib.dir}">
+                        <include name="*.jar"/>
+                    </fileset>
+                </classpath>
+                <batchtest fork="yes">
+                    <fileset dir="${build.dir}">
+                        <include name="@{pattern}"/>
+                    </fileset>
+                </batchtest>
+                <formatter type="plain" usefile="false"/>
+            </junit>
+        </sequential>
+    </macrodef>
+
+    <target name="run-subsetter-test" depends="compile-subsetter">
+        <runtest pattern="**/SubsetterTest.class"/>
+    </target>
+
+    <target name="run-subset-sum-test" depends="compile-subset-sum">
+        <runtest pattern="**/SubsetSumTest.class"/>
+    </target>
+
+    <target name="run-permuter-test" depends="compile-permuter">
+        <runtest pattern="**/PermuterTest.class"/>
+    </target>
+
+    <target name="run-sorter-test" depends="compile-sorter">
+        <runtest pattern="**/SorterTest.class"/>
+    </target>
+
+    <!-- Clean the build directory -->
+    <target name="clean">
+        <echo>Cleaning up...</echo>
+        <delete dir="${build.dir}"/>
+    </target>
+</project>

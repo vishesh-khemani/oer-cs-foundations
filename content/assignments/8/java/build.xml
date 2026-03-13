@@ -1,0 +1,149 @@
+<project name="Computability" default="clean" basedir=".">
+    <!-- Project-specific properties -->
+    <property name="src.dir"     value="src"/>
+    <property name="build.dir"   value="build"/>
+    <property name="lib.dir"   value="lib"/>
+
+    <!-- Initialize the build directory -->
+    <target name="init" depends="clean">
+        <mkdir dir="${build.dir}"/>
+    </target>
+
+    <target name="compile-halting-decider" depends="init">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <include name="HaltingDecider.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-contradiction-predicate" depends="compile-halting-decider">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <include name="ContradictionPredicate.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-contradiction-predicate-test" depends="compile-contradiction-predicate">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="ContradictionPredicateTest.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-returns-true-decider" depends="init">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <include name="ReturnsTrueDecider.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-halting-reduction" depends="compile-returns-true-decider">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <include name="HaltingReduction.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-halting-reduction-test" depends="compile-halting-reduction">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="HaltingReductionTest.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-particle" depends="init">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <include name="Particle.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-particle-pool" depends="compile-particle">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <include name="ParticlePool.java"/>
+        </javac>
+    </target>
+
+    <target name="compile-particle-pool-test" depends="compile-particle-pool">
+        <javac srcdir="${src.dir}"
+               destdir="${build.dir}"
+               encoding="UTF-8"
+               includeantruntime="false">
+            <classpath>
+                <pathelement path="${build.dir}"/>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+            <include name="ParticlePoolTest.java"/>
+        </javac>
+    </target>
+
+    <!-- Macro to run JUint tests for a pattern -->
+    <macrodef name="runtest">
+        <attribute name="pattern"/>
+        <sequential>
+            <junit printsummary="on" haltonfailure="true">
+                <classpath>
+                    <pathelement path="${build.dir}"/>
+                    <fileset dir="${lib.dir}">
+                        <include name="*.jar"/>
+                    </fileset>
+                </classpath>
+                <batchtest fork="yes">
+                    <fileset dir="${build.dir}">
+                        <include name="@{pattern}"/>
+                    </fileset>
+                </batchtest>
+                <formatter type="plain" usefile="false"/>
+            </junit>
+        </sequential>
+    </macrodef>
+
+    <target name="run-contradiction-predicate-test" depends="compile-contradiction-predicate-test">
+        <runtest pattern="**/ContradictionPredicateTest.class"/>
+    </target>
+
+    <target name="run-halting-reduction-test" depends="compile-halting-reduction-test">
+        <runtest pattern="**/HaltingReductionTest.class"/>
+    </target>
+
+    <target name="run-particle-pool-test" depends="compile-particle-pool-test">
+        <runtest pattern="**/ParticlePoolTest.class"/>
+    </target>
+
+    <!-- Clean the build directory -->
+    <target name="clean">
+        <echo>Cleaning up...</echo>
+        <delete dir="${build.dir}"/>
+    </target>
+</project>
