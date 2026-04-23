@@ -7,7 +7,7 @@
 3. [Unit testing](./test.md)
 4. [Collaborative development](./collab.md)
 5. [Build tools](./build-slides.md)
-6. [Memory management](./memory-slides.pdf)
-7. [Generative AI for programming](./ai-slides.pdf)
+6. [Memory management](./memory-slides.md)
+7. [Generative AI for programming](./ai-slides.md)
 
 
