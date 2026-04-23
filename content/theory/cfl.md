@@ -87,8 +87,8 @@
 
 ![Venn diagram showing Context Free languages as a superset of Regular languages, both within the set of all formal languages](../media/languages-venn-2.excalidraw.svg)
 
-| Language Type | Specification        | Recognition          |
+| **Language Type** | **Specification**        | **Recognition**          |
 | ------------- | -------------------- | -------------------- |
-| Regular       | Regular Expression   | NFA                  |
-| Context Free  | Context Free Grammar | PDA (NFA with stack) |
+| **Regular**       | Regular Expression   | NFA                  |
+| **Context Free**  | Context Free Grammar | PDA (NFA with stack) |
 

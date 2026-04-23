@@ -36,7 +36,7 @@ Let's start with a practical example of a DFA in the real-world.
 
 State transition table:
 
-|              | Token    | Push   |
+|              | **Token**    | **Push**   |
 | ------------ | -------- | ------ |
 | **Locked**   | Unlocked | Locked |
 | **Unlocked** | Unlocked | Locked |

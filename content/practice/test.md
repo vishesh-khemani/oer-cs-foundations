@@ -21,7 +21,7 @@
 
 ### Levels of Testing
 
-| Level           | Scope               | Speed  | Cost (create/debug) | Quantity   | Maintenance |
+| **Level**           | **Scope**               | **Speed**  | **Cost (create/debug)** | **Quantity**   | **Maintenance** |
 | :-------------- | :------------------ | :----- | :------------------ | :--------- | :---------- |
 | **Unit**        | Single component    | fast   | Low                 | Many (70%) | Easy        |
 | **Integration** | Multiple components | Medium | Medium              | Some (20%) | Moderate    |
@@ -251,15 +251,15 @@ public class CalculatorTest {
 
 ## Common JUnit Annotations
 
-| Annotation     | Purpose                                     |
+| **Annotation**     | **Purpose**                                     |
 | :------------- | :------------------------------------------ |
-| `@Test`        | Marks a method as a test method             |
-| `@BeforeEach`  | Runs before each test method                |
-| `@AfterEach`   | Runs after each test method                 |
-| `@BeforeAll`   | Runs once before all tests (must be static) |
-| `@AfterAll`    | Runs once after all tests (must be static)  |
-| `@Disabled`    | Temporarily disable a test                  |
-| `@DisplayName` | Provide custom display name for test        |
+| **`@Test`**        | Marks a method as a test method             |
+| **`@BeforeEach`**  | Runs before each test method                |
+| **`@AfterEach`**   | Runs after each test method                 |
+| **`@BeforeAll`**   | Runs once before all tests (must be static) |
+| **`@AfterAll`**    | Runs once after all tests (must be static)  |
+| **`@Disabled`**    | Temporarily disable a test                  |
+| **`@DisplayName`** | Provide custom display name for test        |
 
 **Example:**
 ```java

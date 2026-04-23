@@ -102,31 +102,31 @@ public static void main(String[] args) {
 }
 ```
 
-| n     | seconds | measured-ratio | O-ratio |
+| **n**     | **seconds** | **measured-ratio** | **O-ratio** |
 | ----- | ------- | -------------- | ------- |
-| 100   | 0.01    |                |         |
-| 200   | 0.01    | 2.20           | 2.0     |
-| 400   | 0.02    | 2.18           | 2.0     |
-| 800   | 0.05    | 2.17           | 2.0     |
-| 1600  | 0.11    | 2.06           | 2.0     |
-| 3200  | 0.22    | 2.07           | 2.0     |
-| 6400  | 0.44    | 1.96           | 2.0     |
-| 12800 | 0.87    | 2.00           | 2.0     |
-| 25600 | 1.75    | 2.00           | 2.0     |
-| 51200 | 3.50    | 2.01           | 2.0     |
+| **100**   | 0.01    |                |         |
+| **200**   | 0.01    | 2.20           | 2.0     |
+| **400**   | 0.02    | 2.18           | 2.0     |
+| **800**   | 0.05    | 2.17           | 2.0     |
+| **1600**  | 0.11    | 2.06           | 2.0     |
+| **3200**  | 0.22    | 2.07           | 2.0     |
+| **6400**  | 0.44    | 1.96           | 2.0     |
+| **12800** | 0.87    | 2.00           | 2.0     |
+| **25600** | 1.75    | 2.00           | 2.0     |
+| **51200** | 3.50    | 2.01           | 2.0     |
 
 ## Order-of-growth Classifications
 
 Here are the most common order-of-growth classifications:
-| $O$           | description  | doubling ratio | example programs          | notes                                     |
+| **$O$**           | **description**  | **doubling ratio** | **example programs**          | **notes**                                     |
 | ------------- | ------------ | -------------- | ------------------------- | ----------------------------------------- |
-| $O(1)$        | constant     | 1              | print "Hello World"       |                                           |
-| $O(\log n)$   | logarithmic  | 1              | binary search             | reduce problem by half: T(n) = T(n/2) + 1 |
-| $O(n)$        | linear       | 2              | factorial                 | single loop over $n$                      |
-| $O(n \log n)$ | linearithmic | 2              | mergesort                 | divide-and-conquer: T(n) = 2 T(n/2) + n   |
-| $O(n^2)$      | quadratic    | 4              | insertion sort            | two nested loops                          |
-| $O(n^3)$      | cubic        | 8              | all triples that sum to 0 | three nested loops                        |
-| $O(2^n)$      | exponential  | $2^n$          | all subsets of n elements | impractical for large problems!           |
+| **$O(1)$**        | constant     | 1              | print "Hello World"       |                                           |
+| **$O(\log n)$**   | logarithmic  | 1              | binary search             | reduce problem by half: T(n) = T(n/2) + 1 |
+| **$O(n)$**        | linear       | 2              | factorial                 | single loop over $n$                      |
+| **$O(n \log n)$** | linearithmic | 2              | mergesort                 | divide-and-conquer: T(n) = 2 T(n/2) + n   |
+| **$O(n^2)$**      | quadratic    | 4              | insertion sort            | two nested loops                          |
+| **$O(n^3)$**      | cubic        | 8              | all triples that sum to 0 | three nested loops                        |
+| **$O(2^n)$**      | exponential  | $2^n$          | all subsets of n elements | impractical for large problems!           |
 
 ## Exercises
 
@@ -227,11 +227,11 @@ Here are the most common order-of-growth classifications:
 
 - Here's a table of some common algorithms and approximately how long the above supercomputer would take to solve those problems:
 
-  | Algorithm      | O(n)                                                             | n                  | Supercomputer Run Time                                           |
+  | **Algorithm**      | **O(n)**                                                             | **n**                  | **Supercomputer Run Time**                                           |
   | -------------- | ---------------------------------------------------------------- | ------------------ | ---------------------------------------------------------------- |
-  | Insertion sort | $n^2$ (polynomial)                                               | $10^9$             | ~1 second                                                        |
-  | Subsets        | $2^n$ (exponential)                                              | 100                | > 10,000 years                                                   |
-  | Permutations   | $n! \sim \sqrt{2\pi n} \left(\frac{n}{e}\right)^n$ (exponential) | 52 (deck of cards) | > $10^{42}$ years > age of the universe ($14 \times 10^9$ years) |
+  | **Insertion sort** | $n^2$ (polynomial)                                               | $10^9$             | ~1 second                                                        |
+  | **Subsets**        | $2^n$ (exponential)                                              | 100                | > 10,000 years                                                   |
+  | **Permutations**   | $n! \sim \sqrt{2\pi n} \left(\frac{n}{e}\right)^n$ (exponential) | 52 (deck of cards) | > $10^{42}$ years > age of the universe ($14 \times 10^9$ years) |
 
 - Clearly the polynomial time algorithm is tractable, even for large problem sizes
 

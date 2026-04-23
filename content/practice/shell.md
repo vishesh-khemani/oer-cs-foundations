@@ -13,11 +13,11 @@ $ ls
 - Intermediary between user and OS kernel
 - Common shells by OS
 
-    | OS      | Default Shell  |
-    | ------- | -------------- |
-    | Linux   | **bash**       |
-    | macOS   | **zsh**        |
-    | Windows | **PowerShell** |
+    | **OS**      | **Default Shell** |
+    | ----------- | ----------------- |
+    | **Linux**   | **bash**          |
+    | **macOS**   | **zsh**           |
+    | **Windows** | **PowerShell**    |
 
 - Terminology
   - **Terminal**: the program that provides the window/interface
@@ -56,11 +56,11 @@ $ ls
 
 - Commands
 
-    | Command | Purpose                 | Example         |
-    | ------- | ----------------------- | --------------- |
-    | `pwd`   | print working directory | `pwd`           |
-    | `ls`    | list dir contents       | `ls -al`        |
-    | `cd`    | change dir              | `cd /home/user` |
+    | **Command** | **Purpose**             | **Example**     |
+    | ----------- | ----------------------- | --------------- |
+    | `pwd`       | print working directory | `pwd`           |
+    | `ls`        | list dir contents       | `ls -al`        |
+    | `cd`        | change dir              | `cd /home/user` |
 
 - Common `ls` options (can be combined)
 
@@ -80,12 +80,12 @@ $ ls
 
 - Creating and deleting
 
-    | Command | Purpose                               | Example                |
-    | ------- | ------------------------------------- | ---------------------- |
-    | `mkdir` | make dir                              | `mkdir -p path/to/dir` |
-    | `touch` | create empty file or update timestamp | `touch file.txt`       |
-    | `rm`    | remove files/directories              | rm -rf dir1/           |
-    | `rmdir` | remove empty dir                      | `rmdir dir2`           |
+    | **Command** | **Purpose**                           | **Example**            |
+    | ----------- | ------------------------------------- | ---------------------- |
+    | `mkdir`     | make dir                              | `mkdir -p path/to/dir` |
+    | `touch`     | create empty file or update timestamp | `touch file.txt`       |
+    | `rm`        | remove files/directories              | rm -rf dir1/           |
+    | `rmdir`     | remove empty dir                      | `rmdir dir2`           |
 
 - Copying and moving
 
@@ -117,24 +117,24 @@ $ ls
 
 - Viewing file contents
 
-    | Command | Purpose                                            | Example               |
-    | ------- | -------------------------------------------------- | --------------------- |
-    | `cat`   | Concatenate and display (small files)              | `cat file.txt`        |
-    | `less`  | Page through large files                           | `less large_file.log` |
-    | `head`  | Show first lines for a quick preview               | `head -n 20 file.txt` |
-    | `tail`  | Show last lines e.g. to see the latest log entries | `tail -f logfile.txt` |
+    | **Command** | **Purpose**                                        | **Example**           |
+    | ----------- | -------------------------------------------------- | --------------------- |
+    | `cat`       | Concatenate and display (small files)              | `cat file.txt`        |
+    | `less`      | Page through large files                           | `less large_file.log` |
+    | `head`      | Show first lines for a quick preview               | `head -n 20 file.txt` |
+    | `tail`      | Show last lines e.g. to see the latest log entries | `tail -f logfile.txt` |
 
 - Text processing
 
-    | Command | Purpose                         | Example                      |
-    | ------- | ------------------------------- | ---------------------------- |
-    | `⁠grep` | Search text patterns            | `grep "error" logfile.txt`   |
-    | `⁠sed`  | Stream editor                   | `sed 's/old/new/g' file.txt` |
-    | `awk`   | Pattern scanning and processing | `awk '{print $1}' data.txt`  |
-    | `⁠sort` | Sort lines                      | `sort -n numbers.txt`        |
-    | `⁠uniq` | Report or filter unique lines   | `uniq -c file.txt`           |
-    | `cut`   | Extract columns                 | `cut -d',' -f2 data.csv`     |
-    | `wc`    | Word, line, character count     | `wc -l file.txt`             |
+    | **Command** | **Purpose**                     | **Example**                  |
+    | ----------- | ------------------------------- | ---------------------------- |
+    | `⁠grep`     | Search text patterns            | `grep "error" logfile.txt`   |
+    | `⁠sed`      | Stream editor                   | `sed 's/old/new/g' file.txt` |
+    | `awk`       | Pattern scanning and processing | `awk '{print $1}' data.txt`  |
+    | `⁠sort`     | Sort lines                      | `sort -n numbers.txt`        |
+    | `⁠uniq`     | Report or filter unique lines   | `uniq -c file.txt`           |
+    | `cut`       | Extract columns                 | `cut -d',' -f2 data.csv`     |
+    | `wc`        | Word, line, character count     | `wc -l file.txt`             |
 
 ### Grep and Regular Expressions
 
@@ -298,14 +298,14 @@ $          # End of line
 
 - Process commands
 
-    | Command | Purpose                    | Example         |
-    | ------- | -------------------------- | --------------- |
-    | `⁠ps`   | List processes             | `ps aux`        |
-    | `⁠top`  | Interactive process viewer | `⁠top`          |
-    | `⁠kill` | Terminate process          | `⁠kill -9 1234` |
-    | `⁠jobs` | List background jobs       | `jobs`          |
-    | `⁠bg`   | Resume job in background   | `⁠bg %1`        |
-    | `⁠fg`   | Bring job to foreground    | `⁠fg %1`        |
+    | **Command** | **Purpose**                | **Example**     |
+    | ----------- | -------------------------- | --------------- |
+    | `⁠ps`       | List processes             | `ps aux`        |
+    | `⁠top`      | Interactive process viewer | `⁠top`          |
+    | `⁠kill`     | Terminate process          | `⁠kill -9 1234` |
+    | `⁠jobs`     | List background jobs       | `jobs`          |
+    | `⁠bg`       | Resume job in background   | `⁠bg %1`        |
+    | `⁠fg`       | Bring job to foreground    | `⁠fg %1`        |
 
 - Background execution
 

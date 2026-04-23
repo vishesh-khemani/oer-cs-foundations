@@ -80,7 +80,7 @@ Example 1 NFA as a DFA:
 
 ![The same NFA from Example 3, shown again as the starting point for the NFA-to-DFA conversion below](../media/nfa.excalidraw.svg)
 
-| DFA state transitions | 0            | 1               |
+| **DFA state transitions** | **0**            | **1**               |
 | --------------------- | ------------ | --------------- |
 | **q1**                | q1           | **q1,q2**       |
 | **q1,q2**             | **q1,q3**    | **q1,q2,q3**    |

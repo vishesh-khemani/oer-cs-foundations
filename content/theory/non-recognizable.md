@@ -46,12 +46,12 @@
     - Suppose it's countable
     - Then you can enumerate the strings thus:
     
-     | n   | f(n)    |
+     | **n**   | **f(n)**    |
      | --- | ------- |
-     | 1   | 0110... |
-     | 2   | 1101... |
-     | 3   | 0100... |
-     | ... |         |
+     | **1**   | 0110... |
+     | **2**   | 1101... |
+     | **3**   | 0100... |
+     | **...** |         |
     	
     - You can construct a string that's not in the enumeration 
     

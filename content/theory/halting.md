@@ -90,21 +90,21 @@
 
 - Consider a table in which all TMs are listed down the rows and their string encodings across the columns and the value at a row/column is what the D TM decides when processing $D(<M_i, <M_j>>)$:
 
-| $D(<M_i, <M_j>>)$ | $<M_1>$    | $<M_2>$    | ... |
+| **$D(<M_i, <M_j>>)$** | **$<M_1>$**    | **$<M_2>$**    | **...** |
 | ----------------- | ---------- | ---------- | --- |
-| $M_1$             | **accept** | reject     | ... |
-| $M_2$             | ...        | **reject** | ... |
-| ...               | ...        | ...        | ... |
+| **$M_1$**             | **accept** | reject     | ... |
+| **$M_2$**             | ...        | **reject** | ... |
+| **...**               | ...        | ...        | ... |
 
 - Since the above table lists all TMs, our contrarian TM C must also be listed:
 
-| $D(<M_i, <M_j>>)$ | $<M_1>$    | $<M_2>$    | ... | $<C>$ | ... |
+| **$D(<M_i, <M_j>>)$** | **$<M_1>$**    | **$<M_2>$**    | **...** | **$<C>$** | **...** |
 | ----------------- | ---------- | ---------- | --- | ----- | --- |
-| $M_1$             | **accept** | reject     | ... | ...   | ... |
-| $M_2$             | ...        | **reject** | ... | ...   | ... |
-| ...               | ...        | ...        | ... | ...   | ... |
-| $C$               | **reject** | **accept** | ... | **?** | ... |
-| ...               | ...        | ...        | ... | ...   | ... |
+| **$M_1$**             | **accept** | reject     | ... | ...   | ... |
+| **$M_2$**             | ...        | **reject** | ... | ...   | ... |
+| **...**               | ...        | ...        | ... | ...   | ... |
+| **$C$**               | **reject** | **accept** | ... | **?** | ... |
+| **...**               | ...        | ...        | ... | ...   | ... |
 
 - The row for $C$ must compute the opposite of the diagnonal entries (based on how C was constructed )
 - But then the entry where '?' is requires an opposite of itself, a contradiction! 

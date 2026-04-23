@@ -19,14 +19,14 @@
   1. Removes complexity of operator precedence and the need to use parenthesis to override the precedence
   2. Easier to write code to evaluate
 
-| RE (infix)     | RE (postfix) |
+| **RE (infix)**     | **RE (postfix)** |
 | -------------- | ------------ |
-| 0              | 0            |
-| 1              | 1            |
-| 0\|1           | 01\|         |
-| (0\|1).(0\|1)  | 01\|01\|.    |
-| (0\|1)*        | 01\|*        |
-| 0\|(1.(0\|1)*) | 101\|*.0\|   |
+| **0**              | 0            |
+| **1**              | 1            |
+| **0\|1**           | 01\|         |
+| **(0\|1).(0\|1)**  | 01\|01\|.    |
+| **(0\|1)***        | 01\|*        |
+| **0\|(1.(0\|1)*)** | 101\|*.0\|   |
 
 ### Postfix Evaluation
 
@@ -47,7 +47,7 @@ How to evaluate a postfix expression:
 
 Example with a postfix arithmetic expression: **1 4 1 - 2 * +**
 
-| Token              | Stack (rightmost is top) |
+| **Token**              | **Stack (rightmost is top)** |
 | ------------------ | ------------------------ |
 | **1** 4 1 - 2 * +  | 1                        |
 | 1 **4** 1 - 2 * +  | 1, 4                     |
@@ -59,7 +59,7 @@ Example with a postfix arithmetic expression: **1 4 1 - 2 * +**
 
 Example with a postfix RE: **101|*.0|**
 
-| Token            | Stack (rightmost is top)                                                                                                                                                                                                                  |
+| **Token**            | **Stack (rightmost is top)**                                                                                                                                                                                                                  |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **1**01\|*.0\|   | ![NFA recognizing the single character 1](../media/postfix-nfa1.excalidraw.svg)                                                                                                                                                             |
 | 1**0**1\|*.0\|   | ![NFA recognizing the single character 1](../media/postfix-nfa1.excalidraw.svg) ![NFA recognizing the single character 0](../media/postfix-nfa2.excalidraw.svg)                                                                               |

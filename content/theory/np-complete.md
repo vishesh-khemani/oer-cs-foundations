@@ -44,7 +44,7 @@ Sketch of the proof:
 
     ![Turing machine state diagram for deciding whether a binary string ends in 1, showing states: pending, last 1, and accept, with transitions 1:R, 0:R, and blank](../media/1-ending-tm-shorthand.excalidraw.svg)
 
-   |            | State    | Tape head | cell 0 | cell 1 | cell 2 | cell 3 |
+   |            | **State**    | **Tape head** | **cell 0** | **cell 1** | **cell 2** | **cell 3** |
    | ---------- | -------- | --------- | ------ | ------ | ------ | ------ |
    | **Time 0** | pending1 | cell 0    | **1**  | 0      | 1      | ⊔      |
    | **Time 1** | last1    | cell 1    | 1      | **0**  | 1      | ⊔      |
@@ -98,29 +98,29 @@ Sketch of the proof:
 
 - Here's the list (generated using Gemini 2.5 Pro)
 
-| #   | Problem Name                     | Brief Description                                                                                                                            |
+| **#**   | **Problem Name**                     | **Brief Description**                                                                                                                            |
 | --- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Satisfiability (SAT)**         | (Starting Point) Given a Boolean formula, is there a satisfying truth assignment?                                                            |
-| 2   | **0-1 Integer Programming**      | Given an integer matrix (A) and vector (b), is there a 0-1 vector (x) such that $Ax \leq b$?                                                 |
-| 3   | **Clique**                       | Does a graph (G) have a clique of size at least (k)?                                                                                         |
-| 4   | **Set Packing**                  | Given a collection of finite sets, can you choose (k) of them that are pairwise disjoint?                                                    |
-| 5   | **Vertex Cover**                 | Does a graph have a set of (k) vertices such that every edge is incident to at least one vertex in the set?                                  |
-| 6   | **Set Covering**                 | Given a collection of subsets of a universe (U), can you find (k) subsets whose union is (U)?                                                |
-| 7   | **Feedback Node Set**            | In a directed graph, is there a set of (k) vertices whose removal makes the graph acyclic?                                                   |
-| 8   | **Feedback Arc Set**             | In a directed graph, is there a set of (k) edges (arcs) whose removal makes the graph acyclic?                                               |
-| 9   | **Directed Hamiltonian Cycle**   | Does a directed graph contain a simple cycle that visits every vertex exactly once?                                                          |
-| 10  | **Undirected Hamiltonian Cycle** | Does an undirected graph contain a simple cycle that visits every vertex exactly once?                                                       |
-| 11  | **3-Satisfiability (3-SAT)**     | Given a Boolean formula in 3-CNF, is it satisfiable?                                                                                         |
-| 12  | **Chromatic Number**             | Can the vertices of a graph be colored with (k) colors so that no two adjacent vertices share the same color?                                |
-| 13  | **Clique Cover**                 | Can the vertices of a graph be partitioned into (k) cliques?                                                                                 |
-| 14  | **Exact Cover**                  | Given a collection of subsets of a universe (U), is there a subcollection whose union is (U) and whose members are pairwise disjoint?        |
-| 15  | **Hitting Set**                  | Given a collection of subsets, what is the smallest set that has a non-empty intersection with each subset?                                  |
-| 16  | **Steiner Tree**                 | In a graph with some "terminal" vertices, what is the minimum-weight subgraph that connects all terminals?                                   |
-| 17  | **3-Dimensional Matching**       | Given three sets (X, Y, Z) of equal size, and a set of triples ⁠(x, y, z), can you find a set of (                                           |
-| 18  | **Knapsack**                     | Given a set of items with weights and values, can you select items that fit in a knapsack of a certain capacity and achieve a certain value? |
-| 19  | **Job Sequencing**               | Can a set of jobs, each with a deadline and a penalty for being late, be scheduled to keep the total penalty below a certain threshold?      |
-| 20  | **Partition**                    | Can a set of integers be partitioned into two subsets with an equal sum?                                                                     |
-| 21  | **Max Cut**                      | Can the vertices of a graph be partitioned into two sets (S) and (T) such that at least (k) edges cross from (S) to (T)?                     |
+| **1**   | **Satisfiability (SAT)**         | (Starting Point) Given a Boolean formula, is there a satisfying truth assignment?                                                            |
+| **2**   | **0-1 Integer Programming**      | Given an integer matrix (A) and vector (b), is there a 0-1 vector (x) such that $Ax \leq b$?                                                 |
+| **3**   | **Clique**                       | Does a graph (G) have a clique of size at least (k)?                                                                                         |
+| **4**   | **Set Packing**                  | Given a collection of finite sets, can you choose (k) of them that are pairwise disjoint?                                                    |
+| **5**   | **Vertex Cover**                 | Does a graph have a set of (k) vertices such that every edge is incident to at least one vertex in the set?                                  |
+| **6**   | **Set Covering**                 | Given a collection of subsets of a universe (U), can you find (k) subsets whose union is (U)?                                                |
+| **7**   | **Feedback Node Set**            | In a directed graph, is there a set of (k) vertices whose removal makes the graph acyclic?                                                   |
+| **8**   | **Feedback Arc Set**             | In a directed graph, is there a set of (k) edges (arcs) whose removal makes the graph acyclic?                                               |
+| **9**   | **Directed Hamiltonian Cycle**   | Does a directed graph contain a simple cycle that visits every vertex exactly once?                                                          |
+| **10**  | **Undirected Hamiltonian Cycle** | Does an undirected graph contain a simple cycle that visits every vertex exactly once?                                                       |
+| **11**  | **3-Satisfiability (3-SAT)**     | Given a Boolean formula in 3-CNF, is it satisfiable?                                                                                         |
+| **12**  | **Chromatic Number**             | Can the vertices of a graph be colored with (k) colors so that no two adjacent vertices share the same color?                                |
+| **13**  | **Clique Cover**                 | Can the vertices of a graph be partitioned into (k) cliques?                                                                                 |
+| **14**  | **Exact Cover**                  | Given a collection of subsets of a universe (U), is there a subcollection whose union is (U) and whose members are pairwise disjoint?        |
+| **15**  | **Hitting Set**                  | Given a collection of subsets, what is the smallest set that has a non-empty intersection with each subset?                                  |
+| **16**  | **Steiner Tree**                 | In a graph with some "terminal" vertices, what is the minimum-weight subgraph that connects all terminals?                                   |
+| **17**  | **3-Dimensional Matching**       | Given three sets (X, Y, Z) of equal size, and a set of triples ⁠(x, y, z), can you find a set of (                                           |
+| **18**  | **Knapsack**                     | Given a set of items with weights and values, can you select items that fit in a knapsack of a certain capacity and achieve a certain value? |
+| **19**  | **Job Sequencing**               | Can a set of jobs, each with a deadline and a penalty for being late, be scheduled to keep the total penalty below a certain threshold?      |
+| **20**  | **Partition**                    | Can a set of integers be partitioned into two subsets with an equal sum?                                                                     |
+| **21**  | **Max Cut**                      | Can the vertices of a graph be partitioned into two sets (S) and (T) such that at least (k) edges cross from (S) to (T)?                     |
 
 ## Summary
 

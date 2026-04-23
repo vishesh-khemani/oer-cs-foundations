@@ -53,11 +53,11 @@ Here's a sneak peek at the Venn diagram of formal languages:
 
 ![Venn diagram of formal language classes nested from innermost to outermost: Regular, Context Free, Decidable, Recognizable, and All formal languages](../media/venn-formal-2.excalidraw.svg)
 
-| Language Type  | Specification        | Deciding/Recognition      |
+| **Language Type**  | **Specification**        | **Deciding/Recognition**      |
 | -------------- | -------------------- | ------------------------- |
-| Regular        | Regular Expression   | NFA or equivalent DFA     |
-| Context Free   | Context Free Grammar | PDA (DFA with stack)      |
-| Decidable      | Set description      | Turing-complete Machine   |
-| Recognizable   | Set description      | Turing-complete Machine   |
-| Unrecognizable | Set description      | No such machine possible! |
+| **Regular**        | Regular Expression   | NFA or equivalent DFA     |
+| **Context Free**   | Context Free Grammar | PDA (DFA with stack)      |
+| **Decidable**      | Set description      | Turing-complete Machine   |
+| **Recognizable**   | Set description      | Turing-complete Machine   |
+| **Unrecognizable** | Set description      | No such machine possible! |
 

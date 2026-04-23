@@ -57,9 +57,9 @@
 
 ![Venn diagram showing Context Sensitive languages as a superset of Context Free, which is a superset of Regular, all within all formal languages](../media/languages-venn-3.excalidraw.svg)
 
-| Language Type     | Specification             | Recognition                     |
+| **Language Type**     | **Specification**             | **Recognition**                     |
 | ----------------- | ------------------------- | ------------------------------- |
-| Regular           | Regular Expression        | NFA                             |
-| Context Free      | Context Free Grammar      | PDA (NFA with stack)            |
-| Context Sensitive | Context Sensitive Grammar | LBA (Restricted Turing Machine) |
+| **Regular**           | Regular Expression        | NFA                             |
+| **Context Free**      | Context Free Grammar      | PDA (NFA with stack)            |
+| **Context Sensitive** | Context Sensitive Grammar | LBA (Restricted Turing Machine) |
 

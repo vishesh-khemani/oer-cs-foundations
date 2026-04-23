@@ -4,7 +4,7 @@
 - Similarly a **regular expression (RE)** has alphabet symbols as operands and regular language operators as operators
 - The symbols for the operators in a regular expression are sometimes different from the set operator symbol
 
-|                   | Set             | RE              |
+|                   | **Set**             | **RE**              |
 | ----------------- | --------------- | --------------- |
 | **Union**         | $\cup$          | \|              |
 | **Concatenation** | Implicit (or .) | Implicit (or .) |
@@ -16,14 +16,14 @@
 
 - Here are some examples of regular expressions (and their associated language) over the binary alphabet {0, 1}:
 
-| Regular Language                                  | RE             |
+| **Regular Language**                                  | **RE**             |
 | ------------------------------------------------- | -------------- |
-| {0}                                               | 0              |
-| {1}                                               | 1              |
-| {0} U {1} = {0, 1}                                | 0\|1           |
-| {0, 1} . {0, 1} = {00, 01, 10, 11}                | (0\|1).(0\|1)  |
-| {0, 1} = {ε, 0, 1, 00, 01, 10, 11, ...} | (0\|1)*        |
-| Binary strings with no leading 0s                 | 0\|(1.(0\|1)*) |
+| **{0}**                                               | 0              |
+| **{1}**                                               | 1              |
+| **{0} U {1} = {0, 1}**                                | 0\|1           |
+| **{0, 1} . {0, 1} = {00, 01, 10, 11}**                | (0\|1).(0\|1)  |
+| **{0, 1} = {ε, 0, 1, 00, 01, 10, 11, ...}** | (0\|1)*        |
+| **Binary strings with no leading 0s**                 | 0\|(1.(0\|1)*) |
 
 - REs are a **compact and precise way to specify a regular language**
 

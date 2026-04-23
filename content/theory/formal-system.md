@@ -31,15 +31,15 @@ Examples:
 
 Examples over various alphabets:
 
-| Formal Language                                              | In the language                                         | Not in the language          |
+| **Formal Language**                                              | **In the language**                                         | **Not in the language**          |
 | ------------------------------------------------------------ | ------------------------------------------------------- | ---------------------------- |
-| Palindromes in English                                       | bob, racecar                                            | Apple, banana                |
-| Prime integers                                               | 3, 5, 7, 11                                             | 2, 8, 100                    |
-| English words                                                | Apple, banana                                           | Abc, irregardless            |
-| Valid English sentences                                      | This is a sentence                                      | Lorem Ipsum                  |
-| Valid Java identifiers                                       | x, class                                                | 6, 1a                        |
-| Valid Java programs                                          | Class Hi { public static void main(String[] args) { } } | int main(void) { return 0; } |
-| Integers z such that $x^n + y^n = z^n$ for some integers $x, y, n > 2$ | no integers                                             | all integers                 |
+| **Palindromes in English**                                       | bob, racecar                                            | Apple, banana                |
+| **Prime integers**                                               | 3, 5, 7, 11                                             | 2, 8, 100                    |
+| **English words**                                                | Apple, banana                                           | Abc, irregardless            |
+| **Valid English sentences**                                      | This is a sentence                                      | Lorem Ipsum                  |
+| **Valid Java identifiers**                                       | x, class                                                | 6, 1a                        |
+| **Valid Java programs**                                          | Class Hi { public static void main(String[] args) { } } | int main(void) { return 0; } |
+| **Integers z such that $x^n + y^n = z^n$ for some integers $x, y, n > 2$** | no integers                                             | all integers                 |
 
 ## Why Formal Languages?
 
