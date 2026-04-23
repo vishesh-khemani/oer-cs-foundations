@@ -4,6 +4,8 @@
 
 This repository contains Open Education Resources (OER) for a college-level course on the *Foundations of Computer Science*. The material conforms to the [syllabus](syllabus.md) for CS 301 taught at [Lake Washington Institute of Technology](https://www.lwtech.edu) (LWTech) in the Fall of 2025.
 
+Foundations of Computer Science © 2025 by Vishesh Khemani is licensed under CC BY-NC 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/
+
 ## Content
 
 - [Introduction](./content/intro.md)
