@@ -5,7 +5,7 @@
   - i.e. can't be specified by an RE or recognized by an NFA/DFA?
 
 
-![](../media/venn-formal.excalidraw.svg)
+![Venn diagram showing Regular languages as a subset of all formal languages, with a question mark indicating unknown additional language classes beyond regular](../media/venn-formal.excalidraw.svg)
 
 ## Example
 
@@ -51,7 +51,7 @@
 
 Here's a sneak peek at the Venn diagram of formal languages:
 
-![](../media/venn-formal-2.excalidraw.svg)
+![Venn diagram of formal language classes nested from innermost to outermost: Regular, Context Free, Decidable, Recognizable, and All formal languages](../media/venn-formal-2.excalidraw.svg)
 
 | Language Type  | Specification        | Deciding/Recognition      |
 | -------------- | -------------------- | ------------------------- |

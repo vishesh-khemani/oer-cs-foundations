@@ -1,6 +1,6 @@
 # Shell
 
-![alt text](../media/42806128185_fcb7e34927_c.jpg)[^1]
+![Photograph of a sea shell](../media/42806128185_fcb7e34927_c.jpg)[^1]
 
 ## What is the Shell?
  > A command-line interpreter that allows users to access an operating system's services
@@ -298,14 +298,14 @@ $          # End of line
 
 - Process commands
 
-    | Command | Purpose | Example |
-    | --- | --- | --- |
-    | `⁠ps` | List processes | `ps aux` |
-    | `⁠top` | Interactive process viewer | `⁠top` |
-    | `⁠kill` | Terminate process| `⁠kill -9 1234` |
-    | `⁠jobs` | List background jobs | `jobs` |
-    | `⁠bg` | Resume job in background | `⁠bg %1` |
-    | `⁠fg` | Bring job to foreground | `⁠fg %1` |
+    | Command | Purpose                    | Example         |
+    | ------- | -------------------------- | --------------- |
+    | `⁠ps`   | List processes             | `ps aux`        |
+    | `⁠top`  | Interactive process viewer | `⁠top`          |
+    | `⁠kill` | Terminate process          | `⁠kill -9 1234` |
+    | `⁠jobs` | List background jobs       | `jobs`          |
+    | `⁠bg`   | Resume job in background   | `⁠bg %1`        |
+    | `⁠fg`   | Bring job to foreground    | `⁠fg %1`        |
 
 - Background execution
 

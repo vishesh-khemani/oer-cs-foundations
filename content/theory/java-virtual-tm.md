@@ -118,7 +118,7 @@ public class UTM {
 
 - We'll use the notation \<TM\> to denote a string representation of TM
 
-![](tm-incrementer.excalidraw.svg)
+![State diagram of the binary incrementer Turing machine, used here as an example of a TM that can be represented as a string](tm-incrementer.excalidraw.svg)
 
 - The actual representation is not all that important
 

@@ -6,7 +6,7 @@
 
 Let's start with a practical example of a DFA in the real-world.
 
-![69a5864313d3129e014300e9755e318e23bc3cd2](../media/69a5864313d3129e014300e9755e318e23bc3cd2.png)
+![Photograph of a real-world turnstile gate, used as a practical example of a finite automaton](../media/69a5864313d3129e014300e9755e318e23bc3cd2.png)
 
 - The turnstile can be in one of two **states**
   1. *locked*
@@ -14,25 +14,25 @@ Let's start with a practical example of a DFA in the real-world.
 
   The states can be represented as vertices in a graph.
 
-  ![../media/turnstyle.excalidraw.svg](../media/turnstyle.excalidraw.svg)
+  ![State diagram with two nodes representing the turnstile states: locked and unlocked](../media/turnstyle.excalidraw.svg)
   
 - If the turnstyle is locked and you insert a token, it unlocks
 
   The **state-transition** can be represented as a directed edge between the states, labeled with the input/event that triggers the transition.
 
-  ![../media/turnstyle-t1.excalidraw.svg](../media/turnstyle-t1.excalidraw.svg)
+  ![State diagram showing the token transition: inserting a token moves the turnstile from locked to unlocked](../media/turnstyle-t1.excalidraw.svg)
 
 - If the turnstyle is unlocked and you push it, it let's you pass and locks again
 
-  ![../media/turnstyle-t2.excalidraw.svg](../media/turnstyle-t2.excalidraw.svg)
+  ![State diagram adding a push transition: pushing while unlocked moves the turnstile back to locked](../media/turnstyle-t2.excalidraw.svg)
 
 - If you insert a token while the turnstyle is unlocked, it stays unlocked
 
-  ![../media/turnstyle-t3.excalidraw.svg](../media/turnstyle-t3.excalidraw.svg)
+  ![State diagram adding a self-loop on unlocked: inserting a token while already unlocked keeps the turnstile unlocked](../media/turnstyle-t3.excalidraw.svg)
 
 - If you push while the turnstyle is locked, it stays locked
   
-  ![../media/turnstyle-t4.excalidraw.svg](../media/turnstyle-t4.excalidraw.svg)
+  ![Complete turnstile DFA with all four transitions: token unlocks, push locks, token while unlocked stays unlocked, push while locked stays locked](../media/turnstyle-t4.excalidraw.svg)
 
 State transition table:
 
@@ -81,7 +81,7 @@ An abstract DFA consists of:
 
 Graph:
 
-![../media/turnstyle-abstract.excalidraw.svg](../media/turnstyle-abstract.excalidraw.svg)
+![Abstract DFA for the turnstile with states locked (start and accept) and unlocked, and transitions labeled T (token) and P (push)](../media/turnstyle-abstract.excalidraw.svg)
 
 Strings in the language are made up of the following sequences:
 1. 'P' 0 or more times (stays in locked)
@@ -96,7 +96,7 @@ Strings in the language are made up of the following sequences:
 
 1. Consider the following DFA:
 
-    ![../media/dfa-ex1.excalidraw.svg](../media/dfa-ex1.excalidraw.svg)
+    ![DFA with three states (q1, q2, q3) for an exercise: recognizes binary strings with at least one 1 and an even number of 0s after the last 1](../media/dfa-ex1.excalidraw.svg)
 
     1. What is its alphabet?
     2. What is its language?
@@ -105,11 +105,11 @@ Strings in the language are made up of the following sequences:
 
 1. Define a DFA that recognizes the language of binary strings that end in 1.
 
-    ![../media/dfa-ex2.excalidraw.svg](../media/dfa-ex2.excalidraw.svg)
+    ![DFA with two states (q1 and q2) recognizing binary strings that end in 1](../media/dfa-ex2.excalidraw.svg)
 
 2. Design a DFA for the language of binary strings that contain an even number of 0s (including no 0s and the empty string).
 
-    ![../media/dfa-ex3.excalidraw.svg](../media/dfa-ex3.excalidraw.svg)
+    ![DFA with two states (even and odd) recognizing binary strings that contain an even number of 0s](../media/dfa-ex3.excalidraw.svg)
 
 ## Virtual DFA
 
@@ -156,4 +156,4 @@ boolean result2 = dfa.accepts("PPTPTPPP");
 
 So all the languages discussed above are regular languages.
 
-![](../media/languages-venn.excalidraw.svg)
+![Venn diagram showing Regular languages as a subset of all formal languages](../media/languages-venn.excalidraw.svg)

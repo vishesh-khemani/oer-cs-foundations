@@ -10,7 +10,7 @@
 
   
 
-  ![](../media/vcs-file.excalidraw.svg)
+  ![Diagram showing separate revision histories for two individual files: README.md and HelloWorld.java, each with their own version markers](../media/vcs-file.excalidraw.svg)
 
   
 
@@ -20,7 +20,7 @@
 
 
 
-​		![](../media/vcs-repo.excalidraw.svg)
+​		![Diagram showing a VCS repository tracking three versions (v1, v2, v3) across a set of files (README.md and HelloWorld.java) together, rather than per file](../media/vcs-repo.excalidraw.svg)
 
 - Why use a VCS?
   - Misconception: VCS is just for teams
@@ -39,7 +39,7 @@
   3. Use `git commit` to commit changes locally to your local repo
   4. Use `git push` to push commits from your local repo to the remote repo on GitHub
 
-​		![](../media/git-workflow.excalidraw.svg)
+​		![Diagram of the core Git workflow: a remote repository on GitHub connected to two local clones (User A and User B) via git clone, git commit, and git push operations](../media/git-workflow.excalidraw.svg)
 
 ​	
 
@@ -116,7 +116,7 @@
 
 
 
-​	![](../media/git-branching.excalidraw.svg)
+​	![Diagram of Git branching: a main branch with a feature1 branch and a bugfix branch diverging from and merging back into main](../media/git-branching.excalidraw.svg)
 
 - Commands
   - Switch to the `main` branch

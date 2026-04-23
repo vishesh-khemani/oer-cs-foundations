@@ -13,9 +13,9 @@ There are three core operations on regular languages (and equivalently on NFAs a
   - Given $\text{NFA}_1, \text{NFA}_2$
   - Can construct $\text{NFA}_\cup$
 
-   ![../media/union-1.excalidraw.svg](../media/union-1.excalidraw.svg)
+   ![Two separate NFAs (NFA1 and NFA2) shown before being combined into a union NFA](../media/union-1.excalidraw.svg)
 
-   ![../media/union-2.excalidraw.svg](../media/union-2.excalidraw.svg)
+   ![Union NFA constructed by adding a new start state with epsilon transitions to both NFA1 and NFA2](../media/union-2.excalidraw.svg)
 
 ## 2. Concatenation
 
@@ -28,7 +28,7 @@ There are three core operations on regular languages (and equivalently on NFAs a
   - Given $\text{NFA}_1, \text{NFA}_2$
   - Can construct $\text{NFA}_{1.2}$
 
-   ![../media/concat.excalidraw.svg](../media/concat.excalidraw.svg)
+   ![Concatenation NFA constructed by connecting accept states of NFA1 to the start state of NFA2 via epsilon transitions](../media/concat.excalidraw.svg)
 
 ## 3. Closure
 
@@ -41,9 +41,9 @@ There are three core operations on regular languages (and equivalently on NFAs a
   - Given $\text{NFA}$
   - Can construct $\text{NFA}*$
 
-   ![../media/closure-1.excalidraw.svg](../media/closure-1.excalidraw.svg)
+   ![Original NFA before closure construction, showing its start state and accept states](../media/closure-1.excalidraw.svg)
 
-   ![../media/closure-2.excalidraw.svg](../media/closure-2.excalidraw.svg)
+   ![Two closure NFA constructions (NFA*): Construction 1 adds epsilon back-edges from accept states to start; Construction 2 adds a new accept start state](../media/closure-2.excalidraw.svg)
 
 ## Virtual NFA Operations
 

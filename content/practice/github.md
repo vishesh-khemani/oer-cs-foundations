@@ -22,7 +22,7 @@
 
 ## Activity: Create Repo
 
-![alt text](../media/image.png)
+![Screenshot of the GitHub interface showing the button to create a new repository](../media/image.png)
 
 1. Log in to github.com
 2. Click on the + button in the top right and select **New repository**

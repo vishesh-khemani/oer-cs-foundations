@@ -42,7 +42,7 @@ Sketch of the proof:
 
    - e.g. table for a TM that decides whether a binary string ends in a 1, on input 101
 
-    ![](../media/1-ending-tm-shorthand.excalidraw.svg)
+    ![Turing machine state diagram for deciding whether a binary string ends in 1, showing states: pending, last 1, and accept, with transitions 1:R, 0:R, and blank](../media/1-ending-tm-shorthand.excalidraw.svg)
 
    |            | State    | Tape head | cell 0 | cell 1 | cell 2 | cell 3 |
    | ---------- | -------- | --------- | ------ | ------ | ------ | ------ |
@@ -134,6 +134,6 @@ Sketch of the proof:
 - **NP-hard**: At least as hard as NP-complete, but **not necessarily in NP**
   - e.g. undecidable problems like the halting problem
 
-![](../media/np-complete.excalidraw.svg)
+![Venn diagram of complexity classes: P is a subset of NP; NP-hard extends beyond NP; the intersection of NP and NP-hard is NP-complete](../media/np-complete.excalidraw.svg)
 
 ---

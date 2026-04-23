@@ -3,7 +3,7 @@
 - Turing's seminal paper that is the foundation of computer science
   - https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
   
-  	![image-20250627125056947](../media/image-20250627125056947.png)
+  	![Cover page of Alan Turing's 1936 paper "On Computable Numbers, with an Application to the Entscheidungsproblem"](../media/image-20250627125056947.png)
 
 ## The Model
 
@@ -20,7 +20,7 @@
      - TMs however can run forever, either by changing scan direction or by accessing the tape beyond where the input is
   3. If the machine reaches an **accept/reject state, it stops** without any further processing
 
-![](../media/abstract-machine.excalidraw.png)
+![Diagram of the abstract Turing Machine model showing a finite control unit connected to an infinite tape with a read/write head](../media/abstract-machine.excalidraw.png)
 
 - There are many variants of a TM and they are all equivalent to one another
   - Nondeterministic
@@ -32,7 +32,7 @@
 
 Consider the following TM (state diagram representation) over the binary alphabet:
 
-![](../media/tm-incrementer.excalidraw.svg)
+![State diagram of a Turing machine that increments a binary number: states q0 (scan right), q1 (flip 1s to 0s scanning left), and q2 (accept), with transitions for 0, 1, and blank symbols](../media/tm-incrementer.excalidraw.svg)
 
 How do you read the above diagram?
 
@@ -47,7 +47,7 @@ Tool: https://www.jflap.org to trace the execution, if you're interested in play
 
 Here's the same diagram with some of the transition labels using a shorthand notation:
 
-![](../media/tm-incrementer-2.excalidraw.svg)
+![Same binary incrementer Turing machine state diagram using shorthand notation: omitted output symbol means keep the same symbol, omitted input symbol means any unspecified symbol](../media/tm-incrementer-2.excalidraw.svg)
 
 - If the input symbol is not written down, it denotes any symbol that does not have an explicitly defined transition
 - If the output symbol is not written down, it denotes the same symbol as the input symbol
@@ -89,7 +89,7 @@ Solution strategy:
 
 State diagram:
 
-![](../media/tm-adder.excalidraw.svg)
+![State diagram of a Turing machine that adds two binary numbers by repeatedly decrementing the second number and incrementing the first, using states q0–q6](../media/tm-adder.excalidraw.svg)
 
 Trace over the input 101+10:
 
@@ -130,7 +130,7 @@ Trace over the input 101+10:
   - Tape alphabet: `{0, 1, X, Y, ⊔}`
   - Transitions
   
-      ![alt text](../media/0n1n.excalidraw.svg)
+      ![State diagram of a Turing machine deciding the language {0^n 1^n}: states q0 (start), q1 (found 0, seeking matching 1), q2 (found matching 1, returning left), accept state qa, and reject state qr](../media/0n1n.excalidraw.svg)
 
   - Example for `0011`
 

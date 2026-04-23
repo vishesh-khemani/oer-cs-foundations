@@ -9,7 +9,7 @@
 
 ## Two Possible Universes
 
-![](../media/PvsNP.excalidraw.svg)
+![Two possible universe diagrams: one where P is a strict subset of NP, and one where P equals NP](../media/PvsNP.excalidraw.svg)
 
 1. $P \subset NP$
 2. $P = NP$

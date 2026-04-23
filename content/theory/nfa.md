@@ -4,15 +4,15 @@
 - It enhances state transitions in three ways:
   1. A state can have transitions to **multiple states on the same symbol** being read
 
-    ![alt text](../media/multi-transitions.excalidraw.svg)
+    ![NFA fragment showing state q1 with transitions to two different states (q2 and q3) on the same input symbol, illustrating nondeterministic multi-transitions](../media/multi-transitions.excalidraw.svg)
 
   2. A state can have transitions to other states without a symbol being read (**null transitions**)
 
-    ![alt text](../media/null-transitions.excalidraw.svg)
+    ![NFA fragment showing state q1 with epsilon (null) transitions to states q2 and q3, illustrating transitions that consume no input symbol](../media/null-transitions.excalidraw.svg)
 
   3. A state can have **no transitions for some symbols**. These are effectively dead ends.
 
-    ![alt text](../media/no-transitions.excalidraw.svg)
+    ![NFA fragment showing a state with a transition on symbol 0 but no transition on symbol 1, illustrating a dead-end that implicitly rejects](../media/no-transitions.excalidraw.svg)
 
 - How to run such a nondeterministic machine?
   - Follow all possible paths
@@ -26,26 +26,26 @@
 - Automata that accepts binary strings ending in "1"
 - DFA
 
-    ![alt text](../media/1-ending.excalidraw.svg)
+    ![DFA with two states (pending and accept) recognizing binary strings that end in 1](../media/1-ending.excalidraw.svg)
 
 - NFA
 
-    ![alt text](../media/1-ending-nfa.excalidraw.svg)
+    ![NFA with two states recognizing binary strings ending in 1, simpler than the equivalent DFA due to a self-loop on any symbol at the start state](../media/1-ending-nfa.excalidraw.svg)
 
 ### Example 2
 
 - Automata that accepts binary strings ending in "01"
 - DFA
 
-    ![alt text](../media/01-ending-dfa.excalidraw.svg)
+    ![DFA with three states (pending, pending-0, and accept) recognizing binary strings that end in 01](../media/01-ending-dfa.excalidraw.svg)
 
 - NFA
 
-    ![alt text](../media/01-ending-nfa.excalidraw.svg)
+    ![NFA with three states recognizing binary strings ending in 01, simpler than the equivalent DFA](../media/01-ending-nfa.excalidraw.svg)
 
 ### Example 3
 
-![../media/nfa.excalidraw.svg](../media/nfa.excalidraw.svg)
+![NFA with states q1 through q4 recognizing binary strings that have a 1 in the third position from the end](../media/nfa.excalidraw.svg)
 
 - Where's the nondeterminism?
   - q1 has multiple transitions on the input '1'
@@ -57,7 +57,7 @@
 
 ### Example 4
 
-![nfa-2.excalidraw](../media/nfa-2.excalidraw.svg)
+![NFA using null transitions to recognize binary strings with an even number of 0s or an odd number of 1s, with separate sub-machines for each condition](../media/nfa-2.excalidraw.svg)
 
 - Where's the nondeterminism?
   - q1 has null transitions to "even 0s" and q3
@@ -78,7 +78,7 @@
 
 Example 1 NFA as a DFA:
 
-![../media/nfa.excalidraw.svg](../media/nfa.excalidraw.svg)
+![The same NFA from Example 3, shown again as the starting point for the NFA-to-DFA conversion below](../media/nfa.excalidraw.svg)
 
 | DFA state transitions | 0            | 1               |
 | --------------------- | ------------ | --------------- |
@@ -91,7 +91,7 @@ Example 1 NFA as a DFA:
 | **q1,q3,q4**          | q1,q4        | q1,q2,q4        |
 | **q1,q2,q3,q4**       | q1,q3,q4     | q1,q2,q3,q4     |
 
-![../media/nfa-to-dfa.excalidraw.svg](../media/nfa-to-dfa.excalidraw.svg)
+![Equivalent DFA for the NFA from Example 3, with states representing all possible subsets of NFA states {q1, q2, q3, q4}](../media/nfa-to-dfa.excalidraw.svg)
 
 Which one looks simpler to you?
 

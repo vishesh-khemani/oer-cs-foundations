@@ -55,7 +55,7 @@
 ## Language Hierarchy
 
 
-![](../media/languages-venn-3.excalidraw.svg)
+![Venn diagram showing Context Sensitive languages as a superset of Context Free, which is a superset of Regular, all within all formal languages](../media/languages-venn-3.excalidraw.svg)
 
 | Language Type     | Specification             | Recognition                     |
 | ----------------- | ------------------------- | ------------------------------- |

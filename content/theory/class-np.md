@@ -23,7 +23,7 @@ Formal problem statement:
 
 - Also known as the **traveling salesman problem**
 
-![](../media/hamilton.excalidraw.svg)
+![Example directed graph illustrating the Hamiltonian path problem, with source node s, destination node t, and intermediate nodes](../media/hamilton.excalidraw.svg)
 
 ### Exponential Time Solution
 

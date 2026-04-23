@@ -28,7 +28,7 @@
 
 - A graph denotes relationships between pairs of entities e.g. friendship between two people
 
-  ![](../media/graph.excalidraw.svg)
+  ![Example directed graph with four nodes labeled A, B, C, and D connected by directed edges](../media/graph.excalidraw.svg)
 
 - Anatomy
 

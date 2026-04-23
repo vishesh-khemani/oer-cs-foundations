@@ -85,7 +85,7 @@
 ## Language Hierarchy
 
 
-![](../media/languages-venn-2.excalidraw.svg)
+![Venn diagram showing Context Free languages as a superset of Regular languages, both within the set of all formal languages](../media/languages-venn-2.excalidraw.svg)
 
 | Language Type | Specification        | Recognition          |
 | ------------- | -------------------- | -------------------- |
